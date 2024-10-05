@@ -28,4 +28,4 @@ label scene3:
     d "You kids are going to make me a doctor of climate too at this rate."
     d "I will see to it with the higher ups."
 
-    return
+    jump scene4
