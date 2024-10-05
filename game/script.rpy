@@ -49,7 +49,7 @@ high temperatures cause this disorder'''
 #(pictures of the 3 medical types can be shown by ai too)
     "(Havana and River holler drag Gramps to their hut,and grandma comes up)"
     gm  '''I told your gramps to be in the shade but will he listen?
-         Never!```
+         Never!'''
     gm "Quick, kids we need to collect Aloe Vera leaves."
     gm '''I'll go fetch the community doctor."'''
 #Havana and River attempted to find these herbs in the forest but they were all attacked by spider mites.
