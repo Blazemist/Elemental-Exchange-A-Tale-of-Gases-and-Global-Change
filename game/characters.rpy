@@ -7,7 +7,7 @@ define gp = Character("Gramps", color="#5c5563")
 define i = Character("Info-Kun")
 define ls = Character("Local Shaman", color="#ebe783")
 define isec = Character("Island Security", color="#3209e6")
-
+define H2O = Character("H2O")
 define CO2 = Character("CO2") 
 define CH4  = Character("CH4")
 define NO2 = Character("NO2")
