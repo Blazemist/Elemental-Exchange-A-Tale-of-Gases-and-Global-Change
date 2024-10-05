@@ -29,7 +29,7 @@ label start:
     # hide granda serious
     # show grandpa normal
     gp '''Every year our Earth is getting warmer.
-Do you remember the flash floods that struck our city in 2019 ?'''
+Do you remember the flash floods that struck our city in 2019?'''
     # play music "audio/girl_shreaks.mp4 fadeout 1.0 volume 0.5
     # hide river shocked
     # show river normal at left
@@ -70,21 +70,21 @@ we have skin rashes too due to this unbearable, unpedictable heat.'''
     # hide river disapointed
     # show mil default at left
     # show info kun at right
-    i "miliaria is a skin condition caused by blocked sweat ducts"
+    i "Miliaria is a skin condition caused by blocked sweat ducts"
     # hide mil default
     # show mil cry at left with fade
-    i '''miliaria crystallina: mildest form, clear blisters, no inflammation'''
+    i '''Miliaria crystallina: mildest form, clear blisters, no inflammation'''
     # hide mil cry
     # show mil rub at left with fade
-    i '''miliaria rubra: more severe, red bumps, itching, prickling sensation'''
+    i '''Miliaria rubra: more severe, red bumps, itching, prickling sensation'''
     # hide mil rub
     # show mil pro at left with fade
-    i '''miliaria profunda: rare,flesh-colored bumps,
+    i '''Miliaria profunda: rare,flesh-colored bumps,
 deeper skin layers affected'''
     # hide mil pro
     i '''The most serious complications include impaired
 thermoregulation and secondary bacterial infection.
-high temperatures cause this disorder'''
+High temperatures cause this disorder'''
     "(Havana and River holler drag Gramps to their hut,and grandma comes up)"
     scene bg hut_inside
     # hide info kun
@@ -219,10 +219,10 @@ Just because some humans are ignorant our value doesn't diminish'''
     Can you help them to understand better?'''
     # hide info kun
 menu:
-    "No" : 
-        jump main_story
     "Yes ": 
         pass
+    "No" : 
+        jump main_story
 
 
 label SCENE_2_PART_2:
@@ -319,10 +319,10 @@ aren't aware of real time consequences of human activities.
 Can you Help them to understand better?
 Accept the second challenge of GHG or not?'''
 menu:
-    "No" : 
-        jump main_story
     "Yes ": 
         pass
+    "No" : 
+        jump main_story
 
 
 label q_1:
@@ -333,13 +333,13 @@ label q_1:
     what trend can be observed in the population density?'''
     # hide info kun
     menu:
-        "A)  slightly increasing trend":
+        "A)  Slightly increasing trend":
             "Gas army" "Well done kiddo."
-        "B)  decreasing trend":
+        "B)  Decreasing trend":
             "Gas army" '''Over time, we don’t see yellow hue increasing 
     and thus it is not a decreasing trend in population density.'''
             jump q_1
-        "C)  negligible change":
+        "C)  Negligible change":
             "Gas army" "It was quite an ambiguous one to detect, not a bad attempt."
     jump q_2
 
@@ -348,12 +348,12 @@ label q_2:
     i '''From the year 2015 to 2020 
     did the trend in CO2 emissions increase or decrease in general overall in India?'''
     menu:
-        "Increase ":
+        "Increase":
             "Gas Army" 'Well done.'
             jump main_story
         "Decrease":
             pass
-        "No difference ":
+        "No difference":
             pass
     i'''From bluer overall tint it changed to green,
 and this according to the key means a rise in CO2 emissions.'''
@@ -372,4 +372,4 @@ greenhouse gas emmissions correlation!'''
     h "Our ozone layer has not yet irreparably been depleted!"
     r "Yeah and—"
     
-    jump scene_3
+    jump scene3
