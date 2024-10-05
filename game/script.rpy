@@ -1,7 +1,7 @@
 $ import character.rpy
 label start:
-    # scene bg beach
-    # with fade
+    scene bg beach
+    with fade
     # show havana war at right
     h "It’s “she sells seashells on the seashore”."
     # show river war at left
@@ -86,7 +86,7 @@ deeper skin layers affected'''
 thermoregulation and secondary bacterial infection.
 high temperatures cause this disorder'''
     "(Havana and River holler drag Gramps to their hut,and grandma comes up)"
-    # scene bg hut_inside
+    scene bg hut_inside
     # hide info kun
     # show grandpa faint
     # show havana worried at left
@@ -100,7 +100,7 @@ Never!'''
     # hide grandma tsundere
     # hide havana worried
     # hide grandpa faint
-    # scene bg forest
+    scene bg forest
 #Havana and River attempted to find these herbs in the forest but they were all attacked by spider mites.
     # show river wounded at left
     # show havana wounded at right
@@ -115,7 +115,7 @@ Never!'''
     r  "oh no River-"
     h  "Why are you calling your name-*turns around*"
 
-    # scene bg ocean
+    scene bg ocean
     "Havana & River" "GYAAAAAAN AAAAAAA....*GLUP GLUP GLUP*"
     # hide havana wounded
     # hide river wounded
@@ -127,6 +127,7 @@ Never!'''
 
 label SCENE_2 : 
 #River and Havana meeting the anthropomorphised villains a.k.a GHG [scene atmosphere]
+    scene bg atmosphere
     # show co2 at left
     
     "C.A.R.B.O.N.  D.I.O.X.I.D.E"
@@ -370,4 +371,5 @@ greenhouse gas emmissions correlation!'''
     # stop music
     h "Our ozone layer has not yet irreparably been depleted!"
     r "Yeah and—"
-    #jump scene_3
+    
+    jump scene_3
