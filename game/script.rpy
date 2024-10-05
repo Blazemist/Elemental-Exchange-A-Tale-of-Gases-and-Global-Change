@@ -65,24 +65,36 @@ They’re responsible for trapping heat.'''
 we have skin rashes too due to this unbearable, unpedictable heat.'''
     # [bubble shows up image of miliaria crystallina]
     gp " I need an extraction of aloe vera sap but… *pases out*"
-#[separate bubble informs about Miliaria ]
+    # hide grandpa dying
+    # hide havana pretending_possessed
+    # hide river disapointed
+    # show mil default at left
+    # show info kun at right
     i "miliaria is a skin condition caused by blocked sweat ducts"
-# show mil cry at left with fade
-# show mil rub with fade
-    i '''miliaria crystallina: mildest form, clear blisters, no inflammation
-miliaria rubra: more severe, red bumps, itching, prickling sensation'''
-# show mil pro at right with fade
-    i '''miliaria profunda: rare,
-flesh-colored bumps,
+    # hide mil default
+    # show mil cry at left with fade
+    i '''miliaria crystallina: mildest form, clear blisters, no inflammation'''
+    # hide mil cry
+    # show mil rub at left with fade
+    i '''miliaria rubra: more severe, red bumps, itching, prickling sensation'''
+    # hide mil rub
+    # show mil pro at left with fade
+    i '''miliaria profunda: rare,flesh-colored bumps,
 deeper skin layers affected'''
+    # hide mil pro
     i '''The most serious complications include impaired
 thermoregulation and secondary bacterial infection.
 high temperatures cause this disorder'''
-#(pictures of the 3 medical types can be shown by ai too)
     "(Havana and River holler drag Gramps to their hut,and grandma comes up)"
+    # scene bg hut_inside
+    # hide info kun
+    # show grandpa faint
+    # show grandma disapointed at right
     gm '''I told your gramps to be in the shade but will he listen?
 Never!'''
     gm "Quick, kids we need to collect Aloe Vera leaves."
+    # hide grandma disapointed
+    # show grandma tsundere at right
     gm '''I'll go fetch the community doctor.'''
 #Havana and River attempted to find these herbs in the forest but they were all attacked by spider mites.
     r "Now what do we do"
