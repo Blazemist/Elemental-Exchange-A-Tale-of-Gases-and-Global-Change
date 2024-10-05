@@ -3,11 +3,11 @@ label start:
     scene bg beach
     with fade
     # show havana war at right
-    h "It’s “she sells seashells on the seashore”."
+    h "It’s “She sells seashells on the seashore”."
     # show river war at left
     r '''Nah it's not that. You are saying it wrong!
-    “seas shell sea shells on the seashore” is how it goes.'''
-    "and thus the great war between havana and river begins"
+    “Seas shell sea shells on the seashore” is how it goes.'''
+    "And thus the great war between havana and river begins."
     # hide havana war 
     # hide river war
     # show river normal at left
@@ -42,9 +42,9 @@ Do you remember the flash floods that struck our city in 2019 ?'''
     This is triggered by the rising of temperatures, as I mentioned.'''
     # hide grandpa normal
     # show grandpa sweat_wipe
-    gp '''*wipes swear*You must be familiar with greenhouse gasses, I presume?
+    gp '''*wipes sweat* You must be familiar with greenhouse gasses, I presume?
 They’re responsible for trapping heat.'''
-    r  "This reminds me of our lectures from school, how about you,Havana?"
+    r  "This reminds me of our lectures from school, how about you, Havana?"
     # hide havana normal
     # show havana bliss right
     h "All I recollect is my craving for melting ice cream…"
@@ -53,18 +53,18 @@ They’re responsible for trapping heat.'''
     r "*eye roll* It’s melting ice caps buddy, not ice creams!"
     # hide havana bliss
     # show havana nervous_chuckle at right
-    h " It’s frustratingly hot outside, can’t blame me for hallucinating! "
+    h "It’s frustratingly hot outside, can’t blame me for hallucinating!"
     # hide grandpa sweat_wipe
     # show grandpa dying
     h "Oh no! Is Gramps possessed?"
     # hide havana nervous-chuckle
     # show havana pretending_possessed at right
-    h'''As our local shaman would say,
+    h '''As our local shaman would say,
 “Has some evil eye looked upon us?”'''
     r '''Not funny Havana,
 we have skin rashes too due to this unbearable, unpedictable heat.'''
     # [bubble shows up image of miliaria crystallina]
-    gp " I need an extraction of aloe vera sap but… *pases out*"
+    gp "I need an extraction of aloe vera sap but… *pases out*"
     # hide grandpa dying
     # hide havana pretending_possessed
     # hide river disapointed
@@ -105,15 +105,15 @@ Never!'''
     # show river wounded at left
     # show havana wounded at right
     # show destoryed alo_vera
-    r "Now what do we do"
-    h " Let's keep looking"
-    r  "Oh I hear something"
+    r "Now what do we do?"
+    h "Let's keep looking."
+    r  "Oh I hear something."
     # play music "audio\water_gush.mp4"
-    h " You must be hallucinating"
+    h "You must be hallucinating."
     # show havana wounded
     # show wave at right
-    r  "oh no River-"
-    h  "Why are you calling your name-*turns around*"
+    r  "Oh no River-"
+    h  "Why are you calling your name- *turns around*"
 
     scene bg ocean
     "Havana & River" "GYAAAAAAN AAAAAAA....*GLUP GLUP GLUP*"
@@ -153,25 +153,25 @@ label SCENE_2 :
     # show co2 
     # show ch4 at left
     # show no2 at right
-    '''all of them are in a deep squabble of who has got a more
+    '''All of them are in a deep squabble of who has got a more
 impressive streak of annihilating the human realm.)'''
     CO2 '''As far as the statistics have it,
 I believe it’s obvious
-that my competency surpasses that of any other gas’'''
+that my competency surpasses that of any other gas.'''
     CH4 '''Hey but you get dissolved in water bodies.
 Besides my presence is much more enduring than yours,
-my families stay for about 12 years in the atmosphere'''
+my families stay for about 12 years in the atmosphere.'''
     NO2 '''You think that’s impressive?'''
     NO2 '''My kind usually lasts for about a century and
-we’ve got more GWPthan all those present here.'''
+we’ve got more GWP than all those present here.'''
     #[bubble shows up GWP definition]
 
     CO2 "*looks at FC*"
-    CO2 "What makes you giggle?\nAre you not awe-inspired by our abilities? "
+    CO2 "What makes you giggle? Are you not awe-inspired by our abilities?"
     # hide ch4
     # show sf6
     SF6 '''Our percentage presence may be negligible comparatively,
-but we don’t need to convince you of our might when our GWP is 20k times higher. '''
+but we don’t need to convince you of our might when our GWP is 20k times higher.'''
     # hide sf6
     # hide no2
     # show havana confused at left
@@ -186,10 +186,10 @@ but we don’t need to convince you of our might when our GWP is 20k times highe
     NO2 '''This is no human territory and
 we are the ones to determine the atmospheric fate.'''
     NO2 '''Quite funny,
-if you think about how humans are so self-destructive as to continually summon us. '''
+if you think about how humans are so self-destructive as to continually summon us.'''
     h "Can you help us stop seas from devouring our islands?"
     #play music audio/evil_laugh.mp3  volume 0.5
-    CO2 " You’re asking the wrong folks, kiddos."
+    CO2 "You’re asking the wrong folks, kiddos."
     #stop music
     CO2 '''From your perspective,
 we very much are the ‘villains’ 
@@ -203,7 +203,7 @@ that your people made us out to be because of the mismanagement of resources.'''
     # hide river
     # show ch4 at left
     CH4 "On whose command!"
-    H2O "*eye roll*\nI thought you asked me for entertainment"
+    H2O "*eye roll*\nI thought you asked me for entertainment."
     h '''Who are you all?
 I only recognise carbon dioxide, methane and nitrous dioxide.'''
 
@@ -215,8 +215,8 @@ I only recognise carbon dioxide, methane and nitrous dioxide.'''
     HFC '''*eye roll* 
 Just because some humans are ignorant our value doesn't diminish''' 
     # show info kun
-    i '''majority of the GHGs think Havanah and River aren't aware of them.
-    Can you Help them to understand better?'''
+    i '''Majority of the GHGs think Havanah and River aren't aware of them.
+    Can you help them to understand better?'''
     # hide info kun
 menu:
     "No" : 
@@ -237,12 +237,12 @@ and also as a result of certain chemical reactions like cement production.'''
 when it is absorbed by plants as part of the biological carbon cycle.'''
 #   with fade
 #   scene ch4 form
-    i '''methane is formed at the production and transport of coal,natural gas, and oil.'''
+    i '''Methane is formed at the production and transport of coal,natural gas, and oil.'''
     i '''Methane emissions also result from livestock and other agricultural practices,
 land use, and by the decay of organic waste in municipal solid waste landfills.'''
 #   with fade
 #   scene ch4 elemination
-    i '''natural processes in soil and 
+    i '''Natural processes in soil and 
 chemical reactions in the atmosphere help remove CH4 from the atmosphere.'''
 #   with fade
 #   scene no2 form
@@ -254,8 +254,8 @@ as well as during treatment of wastewater.'''
     i '''NO2 Emissions can be reduced by reducing N-based fertilizer applications 
     and applying these fertilizers more efficiently,
     or reducing fuel consumption in motor vehicle.'''
-    i '''it can also be reduced through technological upgrades 
-    and use of abatement equipment
+    i '''It can also be reduced through technological upgrades 
+    and use of abatement equipment.
     '''
     # with fade
     # scene fc form
@@ -266,7 +266,7 @@ and semiconductor manufacturing.'''
     # with fade
     # scene fc elemination
     i '''Industrial fluorinated gases can reduce emissions by 
-adopting fluorinated gas capture and destruction processors'''
+adopting fluorinated gas capture and destruction processors.'''
     i '''HFCs can be reduced through better system components 
 and through the use of alternative refrigerants with
 lower global warming potentials than those presently used.'''
@@ -274,20 +274,20 @@ lower global warming potentials than those presently used.'''
     # hide info kun
     # show havana normal at left
     h '''There are natural processes to remove you CO2,
-    methane and NO2 from atmosphere while there aren’t for FC'''
+    methane and NO2 from atmosphere while there aren’t for FC.'''
     # show river normal
     r '''That’s about as much difference as there exists between 
 you oldies and new gen GHG.
-sheesh you all made it seem as if you don’t share a combined purpose'''
+sheesh you all made it seem as if you don’t share a combined purpose.'''
     # show no2 at right
-    NO2 "It appears that we underestimated your understanding of the matter at hand"
+    NO2 "It appears that we underestimated your understanding of the matter at hand."
     # hide havana normal
     # show co2
     CO2 '''*shakes head* You kiddos might not be ignorant 
 but we’re responsible for transforming your home into a boiling stew
 thanks to mankind’s misplaced ideas of advancement.'''
     # show river confused
-    r "Misplaced ideas of advancement ?"
+    r "Misplaced ideas of advancement?"
     NO2 '''Humans are convinced of their superiority.
 As your kind relentlessly pursued socioeconomic and industrial prosperity,
 you hastened the degradation of the very environment that sustains you.'''
@@ -314,10 +314,10 @@ adopted by humans to curtail our maleffects.'''
     CH4 '''Oho- It seems you are ignorant of the real time rising trends
 we are setting because of the rising human population density.'''
 
-    '''majority of the GHGs think Havanah and River 
+    '''Majority of the GHGs think Havanah and River 
 aren't aware of real time consequences of human activities.
 Can you Help them to understand better?
-Accept the second challenge of GHG or not ?'''
+Accept the second challenge of GHG or not?'''
 menu:
     "No" : 
         jump main_story
@@ -330,17 +330,17 @@ label q_1:
     #with fade
     # show info kun
     i '''As the years go from 2005 to 2020
-    what trend can be observed in the population density ?'''
+    what trend can be observed in the population density?'''
     # hide info kun
     menu:
         "A)  slightly increasing trend":
-            "Gas army" "Well done kiddo"
+            "Gas army" "Well done kiddo."
         "B)  decreasing trend":
             "Gas army" '''Over time, we don’t see yellow hue increasing 
-    and thus it is not a decreasing trend in population density'''
+    and thus it is not a decreasing trend in population density.'''
             jump q_1
         "C)  negligible change":
-            "Gas army" "It was quite an ambiguous one to detect, not a bad attempt"
+            "Gas army" "It was quite an ambiguous one to detect, not a bad attempt."
     jump q_2
 
 label q_2:
@@ -349,7 +349,7 @@ label q_2:
     did the trend in CO2 emissions increase or decrease in general overall in India?'''
     menu:
         "Increase ":
-            "Gas Army" 'well done'
+            "Gas Army" 'Well done.'
             jump main_story
         "Decrease":
             pass
@@ -367,7 +367,7 @@ greenhouse gas emmissions correlation!'''
     h "Everyone I’ve ever looked up to would probably be disappointed to see us back down."
     #play music audio/evil_laugh.mp3  volume 0.5
     CO2 '''Humans have been ‘trying to do something’
-    and has that ever been enough to stop us ?'''
+    and has that ever been enough to stop us?'''
     # stop music
     h "Our ozone layer has not yet irreparably been depleted!"
     r "Yeah and—"
