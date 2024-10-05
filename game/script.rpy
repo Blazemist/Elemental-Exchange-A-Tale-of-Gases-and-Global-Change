@@ -18,7 +18,7 @@ label start:
     # hide grandpa summon
     # hide havana normal
     # show grandpa chuckle
-    # play music "audio/tired_chuckle.mp4 fadeout 1.0 volume 0.5
+    # play music "audio/tired_chuckle.mp4"
     gp "Both of you can be right."
     # stop music 
     # hide grandpa chuckle
@@ -89,6 +89,7 @@ high temperatures cause this disorder'''
     # scene bg hut_inside
     # hide info kun
     # show grandpa faint
+    # show havana worried at left
     # show grandma disapointed at right
     gm '''I told your gramps to be in the shade but will he listen?
 Never!'''
@@ -96,39 +97,61 @@ Never!'''
     # hide grandma disapointed
     # show grandma tsundere at right
     gm '''I'll go fetch the community doctor.'''
+    # hide grandma tsundere
+    # hide havana worried
+    # hide grandpa faint
+    # scene bg forest
 #Havana and River attempted to find these herbs in the forest but they were all attacked by spider mites.
+    # show river wounded at left
+    # show havana wounded at right
+    # show destoryed alo_vera
     r "Now what do we do"
     h " Let's keep looking"
     r  "Oh I hear something"
-#[sfx of water gushing from     r overflow]
+    # play music "audio\water_gush.mp4"
     h " You must be hallucinating"
+    # show havana wounded
+    # show wave at right
     r  "oh no River-"
     h  "Why are you calling your name-*turns around*"
+
+    # scene bg ocean
     "Havana & River" "GYAAAAAAN AAAAAAA....*GLUP GLUP GLUP*"
-#(River and Havana scream is heard as they all start to drown due to flooding of the river)
-#(bubble sfx)
+    # hide havana wounded
+    # hide river wounded
+    # play music "audio\drowning.mp4"
+    # stop music
+    
+
     jump SCENE_2
 
 label SCENE_2 : 
 #River and Havana meeting the anthropomorphised villains a.k.a GHG [scene atmosphere]
     # show co2 at left
-    "1"
+    
+    "C.A.R.B.O.N.  D.I.O.X.I.D.E"
     # show ch4 at right
-    "2"
+    "M.E.T.H.A.N.E"
     # show no2
-    "3"
+    "N.I.T.R.O.U.S O.X.I.D.E"
     # hide co2
     # show sf6 at left
-    "4"
+    "S.U.L.F.E.R H.E.X.A.F.L.U.O.R.I.D.E"
     # hide ch4 
     # show pfc at right
-    "5"
+    "P.E.R.F.L.U.R.O.C.H.E.M.I.C.A.L.S"
     # hide no2
     # show hfc
-    "6"
+    "H.Y.D.R.O.F.L.U.R.O.C.A.R.B.O.N"
     # hide sf6
     # show nf3 at left
-    ""
+    "N.I.T.R.O.G.E.N  T.R.I.F.L.U.R.I.D.E"
+    # hide pfc
+    # hide hfc
+    # hide nf3
+    # show co2 
+    # show ch4 at left
+    # show no2 at right
     '''all of them are in a deep squabble of who has got a more
 impressive streak of annihilating the human realm.)'''
     CO2 '''As far as the statistics have it,
@@ -140,45 +163,60 @@ my families stay for about 12 years in the atmosphere'''
     NO2 '''You think that’s impressive?'''
     NO2 '''My kind usually lasts for about a century and
 we’ve got more GWPthan all those present here.'''
-#[bubble shows up GWP definition]
+    #[bubble shows up GWP definition]
 
     CO2 "*looks at FC*"
     CO2 "What makes you giggle?\nAre you not awe-inspired by our abilities? "
+    # hide ch4
+    # show sf6
     SF6 '''Our percentage presence may be negligible comparatively,
 but we don’t need to convince you of our might when our GWP is 20k times higher. '''
+    # hide sf6
+    # hide no2
+    # show havana confused at left
+    # show river confused at right
     h "Is this heaven or hell?"
     r "Where are we indeed?"
- 
-#(River and Havana are in the atmosphere of a layer where greenhouse gasses gather .
-#They see themselves as molecules)
+    #(River and Havana are in the atmosphere of a layer where greenhouse gasses gather .
+    #They see themselves as molecules)
     CO2 "Oh what are these human fledgelings doing here?"
+    # hide river confused
+    # show no2 at right
     NO2 '''This is no human territory and
 we are the ones to determine the atmospheric fate.'''
     NO2 '''Quite funny,
 if you think about how humans are so self-destructive as to continually summon us. '''
     h "Can you help us stop seas from devouring our islands?"
-#   play music audio/evil_laugh.mp3  volume 0.5
+    #play music audio/evil_laugh.mp3  volume 0.5
     CO2 " You’re asking the wrong folks, kiddos."
-#   stop music
+    #stop music
     CO2 '''From your perspective,
 we very much are the ‘villains’ 
 that your people made us out to be because of the mismanagement of resources.'''
-#   show havana confused at right
-#   show river confused at left
-
-
+    # hide co2 
+    # hide no2
+    # show havana confused at right
+    # show river confused at left
+    # show h2o wifu
     H2O "I may or may not have brought them here…."
+    # hide river
+    # show ch4 at left
     CH4 "On whose command!"
     H2O "*eye roll*\nI thought you asked me for entertainment"
     h '''Who are you all?
 I only recognise carbon dioxide, methane and nitrous dioxide.'''
-# turns to fc harem
-    CO2 "Told ya we oldies are goldies."
+
+    CO2 "*looks at hfc*\nTold ya we oldies are goldies."
+    # hide h20
+    # show co2
+    # hide ch4
+    # show hfc
     HFC '''*eye roll* 
 Just because some humans are ignorant our value doesn't diminish''' 
-
+    # show info kun
     i '''majority of the GHGs think Havanah and River aren't aware of them.
     Can you Help them to understand better?'''
+    # hide info kun
 menu:
     "No" : 
         jump main_story
@@ -187,7 +225,8 @@ menu:
 
 
 label SCENE_2_PART_2:
-#   scene co2 form
+    # scene co2 form
+    # show info kun
     i '''Carbon dioxide enters the atmosphere through burning fossil fuels 
 (coal, natural gas, and oil), solid waste, trees and other biological materials
 and also as a result of certain chemical reactions like cement production.'''
@@ -217,33 +256,42 @@ as well as during treatment of wastewater.'''
     i '''it can also be reduced through technological upgrades 
     and use of abatement equipment
     '''
-#   with fade
-#   scene fc form
+    # with fade
+    # scene fc form
     i '''They are emitted through their use as substitutes 
 for ozone-depleting substances like as refrigerants
 and through a variety of industrial processes such as aluminum 
 and semiconductor manufacturing.'''
-#   with fade
-#   scene fc elemination
+    # with fade
+    # scene fc elemination
     i '''Industrial fluorinated gases can reduce emissions by 
 adopting fluorinated gas capture and destruction processors'''
     i '''HFCs can be reduced through better system components 
 and through the use of alternative refrigerants with
 lower global warming potentials than those presently used.'''
-#   with fade
+    # with fade
+    # hide info kun
+    # show havana normal at left
     h '''There are natural processes to remove you CO2,
     methane and NO2 from atmosphere while there aren’t for FC'''
+    # show river normal
     r '''That’s about as much difference as there exists between 
 you oldies and new gen GHG.
 sheesh you all made it seem as if you don’t share a combined purpose'''
+    # show no2 at right
     NO2 "It appears that we underestimated your understanding of the matter at hand"
+    # hide havana normal
+    # show co2
     CO2 '''*shakes head* You kiddos might not be ignorant 
 but we’re responsible for transforming your home into a boiling stew
 thanks to mankind’s misplaced ideas of advancement.'''
+    # show river confused
     r "Misplaced ideas of advancement ?"
     NO2 '''Humans are convinced of their superiority.
 As your kind relentlessly pursued socioeconomic and industrial prosperity,
 you hastened the degradation of the very environment that sustains you.'''
+    # hide river confused
+    # show sf6
     SF6 "I’ve come across humans who claim that reports of our GWP are means to achieve fearmongering among the masses."
     SF6 '''It is almost funny how gullibly they continue to shrug off the effects of global warming that they experience first-hand.
     Talk about self-sabotage!'''
@@ -251,11 +299,14 @@ you hastened the degradation of the very environment that sustains you.'''
     CO2 '''Our results are practically rising at a rate greater
 than that of any preventive measures 
 adopted by humans to curtail our maleffects.'''
+    # hide sf6
+    # hide co2
+    # hide no2
 
 # show data_line_graph ghg_usa
 #   show river shocked at left
     "..."
-#   show havana shocked at left
+#   show havana shocked at right
     "..."
 # hide data_line_graph ghg_usa
 #   show ch4 smug
@@ -276,8 +327,10 @@ menu:
 label q_1:
     #scene data_line_graph ghg_usa
     #with fade
+    # show info kun
     i '''As the years go from 2005 to 2020
     what trend can be observed in the population density ?'''
+    # hide info kun
     menu:
         "A)  slightly increasing trend":
             "Gas army" "Well done kiddo"
@@ -287,6 +340,10 @@ label q_1:
             jump q_1
         "C)  negligible change":
             "Gas army" "It was quite an ambiguous one to detect, not a bad attempt"
+    jump q_2
+
+label q_2:
+    # scene bg co2_emission_trend
     i '''From the year 2015 to 2020 
     did the trend in CO2 emissions increase or decrease in general overall in India?'''
     menu:
