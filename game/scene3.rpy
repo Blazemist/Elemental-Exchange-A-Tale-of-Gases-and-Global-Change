@@ -7,7 +7,6 @@ label scene3:
     h "..."
     # show doc nods at right
     d "They are both fighters"
-    # hide havana
     # show grandma sobs at left
     gm "Oh my babies"
     # hide river sleeping
