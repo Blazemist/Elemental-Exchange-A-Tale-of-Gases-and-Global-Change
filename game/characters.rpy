@@ -9,7 +9,7 @@ define ls = Character("Local Shaman", color="#ebe783")
 define isec = Character("Island Security", color="#3209e6")
 
 define CO2 = Character("CO2") 
-define NH4  = Character("NH4")
+define CH4  = Character("CH4")
 define NO2 = Character("NO2")
 define SF6 = Character("SF6")
 define PFC = Character("PFC")
