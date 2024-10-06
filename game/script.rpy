@@ -57,7 +57,7 @@ They’re responsible for trapping heat.'''
     # hide grandpa sweat_wipe
     # show grandpa dying
     h "Oh no! Is Gramps possessed?"
-    # hide havana nervous-chuckle
+    # hide havana nervous_chuckle
     # show havana pretending_possessed at right
     h '''As our local shaman would say,
 “Has some evil eye looked upon us?”'''
@@ -102,23 +102,26 @@ Never!'''
     # hide grandpa faint
     scene bg forest
 #Havana and River attempted to find these herbs in the forest but they were all attacked by spider mites.
-    # show river wounded at left
-    # show havana wounded at right
+    # show river normal at left
+    # show havana normal at right
     # show destoryed alo_vera
     r "Now what do we do?"
     h "Let's keep looking."
+    # hide destoryed alo_vera
+    # show havana normal
+    # hide river normal
+    # show river shocked at left
     r  "Oh I hear something."
     # play music "audio\water_gush.mp4"
     h "You must be hallucinating."
-    # show havana wounded
     # show wave at right
     r  "Oh no River-"
     h  "Why are you calling your name- *turns around*"
 
     scene bg ocean
     "Havana & River" "GYAAAAAAN AAAAAAA....*GLUP GLUP GLUP*"
-    # hide havana wounded
-    # hide river wounded
+    # hide havana normal
+    # hide river shocked
     # play music "audio\drowning.mp4"
     # stop music
     
