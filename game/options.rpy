@@ -12,13 +12,13 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Pentagoner wage war at climate change story")
+define config.name = _("Elemental Exchange")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
@@ -126,7 +126,7 @@ default preferences.text_cps = 80
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
 
-default preferences.afm_time = 15
+default preferences.afm_time = 10
 
 
 ## Save directory ##############################################################
@@ -150,7 +150,7 @@ define config.save_directory = "Pentagonerwagewaratclimatechangestory-1728106334
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "/earth-icon.ico"
 
 
 ## Build configuration #########################################################
