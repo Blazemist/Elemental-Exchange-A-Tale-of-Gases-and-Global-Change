@@ -142,31 +142,41 @@ label SCENE_2 :
     scene bg atmosphere
     with fade
     play music "cc_bgm_aware.wav" fadein 1.0
-    # show co2 at left
+    show co2 at left:
+        yalign 0.5
     
     "C.A.R.B.O.N.  D.I.O.X.I.D.E"
-    # show ch4 at right
+    show ch4 at right:
+        yalign 0.5
     "M.E.T.H.A.N.E"
-    # show no2
+    show no2:
+        yalign 0.5
     "N.I.T.R.O.U.S O.X.I.D.E"
-    # hide co2
-    # show sf6 at left
+    hide co2
+    show sf6 at left:
+        yalign 0.5
     "S.U.L.F.E.R H.E.X.A.F.L.U.O.R.I.D.E"
-    # hide ch4 
-    # show pfc at right
+    hide ch4 
+    show pfc at right:
+        yalign 0.5
     "P.E.R.F.L.U.R.O.C.H.E.M.I.C.A.L.S"
-    # hide no2
-    # show hfc
+    hide no2
+    show hfc:
+        yalign 0.5
     "H.Y.D.R.O.F.L.U.R.O.C.A.R.B.O.N"
     # hide sf6
-    # show nf3 at left
+    show nf3 at left:
+        yalign 0.5
     "N.I.T.R.O.G.E.N  T.R.I.F.L.U.R.I.D.E"
-    # hide pfc
-    # hide hfc
-    # hide nf3
-    # show co2 
-    # show ch4 at left
-    # show no2 at right
+    hide pfc
+    hide hfc
+    hide nf3
+    show co2:
+        yalign 0.5
+    show ch4 at left:
+        yalign 0.5
+    show no2 at right:
+        yalign 0.5
     '''All of them are in a deep squabble of who has got a more
 impressive streak of annihilating the human realm.)'''
     CO2 '''As far as the statistics have it,
@@ -182,12 +192,13 @@ we’ve got more GWP than all those present here.'''
 
     CO2 "*looks at FC*"
     CO2 "What makes you giggle? Are you not awe-inspired by our abilities?"
-    # hide ch4
-    # show sf6
+    hide ch4
+    show sf6:
+        yalign 0.5
     SF6 '''Our percentage presence may be negligible comparatively,
 but we don’t need to convince you of our might when our GWP is 20k times higher.'''
-    # hide sf6
-    # hide no2
+    hide sf6
+    hide no2
     # show havana confused at left
     # show river confused at right
     h "Is this heaven or hell?"
@@ -196,7 +207,8 @@ but we don’t need to convince you of our might when our GWP is 20k times highe
     #They see themselves as molecules)
     CO2 "Oh what are these human fledgelings doing here?"
     # hide river confused
-    # show no2 at right
+    show no2 at right:
+        yalign 0.5
     NO2 '''This is no human territory and
 we are the ones to determine the atmospheric fate.'''
     NO2 '''Quite funny,
@@ -208,26 +220,31 @@ if you think about how humans are so self-destructive as to continually summon u
     CO2 '''From your perspective,
 we very much are the ‘villains’ 
 that your people made us out to be because of the mismanagement of resources.'''
-    # hide co2 
-    # hide no2
+    hide co2 
+    hide no2
     # show havana confused at right
     # show river confused at left
-    # show h2o wifu
+    show h2o:
+        yalign 0.5
     H2O "I may or may not have brought them here…."
     # hide river
-    # show ch4 at left
+    show ch4 at left:
+        yalign 0.5
     CH4 "On whose command!"
     H2O "*eye roll*\nI thought you asked me for entertainment."
     h '''Who are you all?
 I only recognise carbon dioxide, methane and nitrous dioxide.'''
 
     CO2 "*looks at hfc*\nTold ya we oldies are goldies."
-    # hide h20
-    # show co2
-    # hide ch4
-    # show hfc
+    hide h2o
+    show co2:
+        yalign 0.5
+    hide ch4
+    show hfc:
+        yalign 0.5
     HFC '''*eye roll* 
 Just because some humans are ignorant our value doesn't diminish''' 
+    hide hfc
     # show info kun
     i '''Majority of the GHGs think Havanah and River aren't aware of them.
     Can you help them to understand better?'''
@@ -293,10 +310,12 @@ lower global warming potentials than those presently used.'''
     r '''That’s about as much difference as there exists between 
 you oldies and new gen GHG.
 sheesh you all made it seem as if you don’t share a combined purpose.'''
-    # show no2 at right
+    show no2 at right:
+        yalign 0.5
     NO2 "It appears that we underestimated your understanding of the matter at hand."
     # hide havana normal
-    # show co2
+    show co2:
+        yalign 0.5
     CO2 '''*shakes head* You kiddos might not be ignorant 
 but we’re responsible for transforming your home into a boiling stew
 thanks to mankind’s misplaced ideas of advancement.'''
@@ -306,7 +325,8 @@ thanks to mankind’s misplaced ideas of advancement.'''
 As your kind relentlessly pursued socioeconomic and industrial prosperity,
 you hastened the degradation of the very environment that sustains you.'''
     # hide river confused
-    # show sf6
+    show sf6:
+        yalign 0.5
     SF6 "I’ve come across humans who claim that reports of our GWP are means to achieve fearmongering among the masses."
     SF6 '''It is almost funny how gullibly they continue to shrug off the effects of global warming that they experience first-hand.
     Talk about self-sabotage!'''
@@ -314,9 +334,9 @@ you hastened the degradation of the very environment that sustains you.'''
     CO2 '''Our results are practically rising at a rate greater
 than that of any preventive measures 
 adopted by humans to curtail our maleffects.'''
-    # hide sf6
-    # hide co2
-    # hide no2
+    hide sf6
+    hide co2
+    hide no2
 
 # show data_line_graph ghg_usa
 #   show river shocked at left
@@ -324,7 +344,8 @@ adopted by humans to curtail our maleffects.'''
 #   show havana shocked at right
     "..."
 # hide data_line_graph ghg_usa
-#   show ch4 smug
+    show ch4:
+        yalign 0.5
     CH4 '''Oho- It seems you are ignorant of the real time rising trends
 we are setting because of the rising human population density.'''
 
