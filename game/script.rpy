@@ -18,9 +18,9 @@ label start:
     # hide grandpa summon
     # hide havana normal
     # show grandpa chuckle
-    # play music "audio/tired_chuckle.mp4"
+    play sound "audio/Chuckling Man.mp3"
     gp "Both of you can be right."
-    # stop music 
+    stop sound 
     # hide grandpa chuckle
     # show grandpa serious
     gp "These days the seas are indeed “shelling” our shores."
@@ -30,12 +30,12 @@ label start:
     # show grandpa normal
     gp '''Every year our Earth is getting warmer.
 Do you remember the flash floods that struck our city in 2019?'''
-    # play music "audio/girl_shreaks.mp4 fadeout 1.0 volume 0.5
+    play sound "audio/eek.mp3" volume 0.75
     # hide river shocked
     # show river normal at left
     # show havana disgust at right
     h "Oh yes I could locate multiple snakes swimming in that filthy stagnant water."
-    # stop music
+    stop sound
     # hide havana disgust 
     # show havana normal at right
     gp '''Many coastal regions like our town are threatened by the ever-rising sea levels.
@@ -64,12 +64,14 @@ They’re responsible for trapping heat.'''
     r '''Not funny Havana,
 we have skin rashes too due to this unbearable, unpedictable heat.'''
     # [bubble shows up image of miliaria crystallina]
+    play sound "audio/dying-and-asking-for-help.mp3"
     gp "I need an extraction of aloe vera sap but… *pases out*"
     # hide grandpa dying
     # hide havana pretending_possessed
     # hide river disapointed
     # show mil default at left
     # show info kun at right
+    stop sound
     i "Miliaria is a skin condition caused by blocked sweat ducts"
     # hide mil default
     # show mil cry at left with fade
@@ -87,6 +89,7 @@ thermoregulation and secondary bacterial infection.
 High temperatures cause this disorder'''
     "(Havana and River holler drag Gramps to their hut,and grandma comes up)"
     scene bg hut_inside
+    with fade
     # hide info kun
     # show grandpa faint
     # show havana worried at left
@@ -101,6 +104,7 @@ Never!'''
     # hide havana worried
     # hide grandpa faint
     scene bg forest
+    with fade
 #Havana and River attempted to find these herbs in the forest but they were all attacked by spider mites.
     # show river normal at left
     # show havana normal at right
@@ -112,25 +116,27 @@ Never!'''
     # hide river normal
     # show river shocked at left
     r  "Oh I hear something."
-    # play music "audio\water_gush.mp4"
+    play sound "audio/bubbles.mp3" volume 0.05
     h "You must be hallucinating."
     # show wave at right
     r  "Oh no River-"
     h  "Why are you calling your name- *turns around*"
+    stop sound
 
     scene bg ocean
+    with fade
+    play sound "audio/Waves.mp3"
     "Havana & River" "GYAAAAAAN AAAAAAA....*GLUP GLUP GLUP*"
     # hide havana normal
     # hide river shocked
-    # play music "audio\drowning.mp4"
-    # stop music
+    stop sound
     
-
     jump SCENE_2
 
 label SCENE_2 : 
 #River and Havana meeting the anthropomorphised villains a.k.a GHG [scene atmosphere]
     scene bg atmosphere
+    with fade
     # show co2 at left
     
     "C.A.R.B.O.N.  D.I.O.X.I.D.E"
@@ -191,9 +197,9 @@ we are the ones to determine the atmospheric fate.'''
     NO2 '''Quite funny,
 if you think about how humans are so self-destructive as to continually summon us.'''
     h "Can you help us stop seas from devouring our islands?"
-    #play music audio/evil_laugh.mp3  volume 0.5
+    play sound "audio/villian-theme.wav"  volume 0.5
     CO2 "You’re asking the wrong folks, kiddos."
-    #stop music
+    stop sound
     CO2 '''From your perspective,
 we very much are the ‘villains’ 
 that your people made us out to be because of the mismanagement of resources.'''
@@ -368,10 +374,10 @@ label main_story:
 now that we know about population densities and
 greenhouse gas emmissions correlation!'''
     h "Everyone I’ve ever looked up to would probably be disappointed to see us back down."
-    #play music audio/evil_laugh.mp3  volume 0.5
+    play sound "audio/villian-theme.wav"  volume 0.5
     CO2 '''Humans have been ‘trying to do something’
     and has that ever been enough to stop us?'''
-    # stop music
+    stop sound
     h "Our ozone layer has not yet irreparably been depleted!"
     r "Yeah and—"
     

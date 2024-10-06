@@ -1,7 +1,7 @@
 
 label scene4:
-    # scene bg schoolncoms
-    # with fade
+    scene bg auditorium
+    with fade
     # show havana war at right
     # show river war 
     # show crowd big at left
@@ -15,6 +15,8 @@ label scene4:
     ""
     # stop music 
     # hide crowd cheers
+    scene bg car
+    with fade
     "Few months later"
     # show tourist annoyed at right
     # show vehicle
