@@ -2,6 +2,7 @@ label scene3:
 
     scene bg hospital
     with fade
+    play music "mainbgm.mp3" fadein 1.0
     # show havana sleeping at left
     # show river sleeping 
     h "..."

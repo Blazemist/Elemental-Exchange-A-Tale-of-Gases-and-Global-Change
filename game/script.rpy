@@ -2,6 +2,7 @@ $ import character.rpy
 label start:
     scene bg beach
     with fade
+    play music "mainbgm.mp3" fadein 1.0
     # show havana war at right
     h "It’s “She sells seashells on the seashore”."
     # show river war at left
@@ -30,7 +31,7 @@ label start:
     # show grandpa normal
     gp '''Every year our Earth is getting warmer.
 Do you remember the flash floods that struck our city in 2019?'''
-    play sound "audio/eek.mp3" volume 0.75
+    play sound "audio/eek.mp3"
     # hide river shocked
     # show river normal at left
     # show havana disgust at right
@@ -64,6 +65,7 @@ They’re responsible for trapping heat.'''
     r '''Not funny Havana,
 we have skin rashes too due to this unbearable, unpedictable heat.'''
     # [bubble shows up image of miliaria crystallina]
+    stop music fadeout 1.0
     play sound "audio/dying-and-asking-for-help.mp3"
     gp "I need an extraction of aloe vera sap but… *pases out*"
     # hide grandpa dying
@@ -90,6 +92,7 @@ High temperatures cause this disorder'''
     "(Havana and River holler drag Gramps to their hut,and grandma comes up)"
     scene bg hut_inside
     with fade
+    play music "mainbgm.mp3" fadein 1.0
     # hide info kun
     # show grandpa faint
     # show havana worried at left
@@ -116,7 +119,7 @@ Never!'''
     # hide river normal
     # show river shocked at left
     r  "Oh I hear something."
-    play sound "audio/bubbles.mp3" volume 0.05
+    play sound "audio/bubbles.mp3" volume 0.1
     h "You must be hallucinating."
     # show wave at right
     r  "Oh no River-"
@@ -125,6 +128,7 @@ Never!'''
 
     scene bg ocean
     with fade
+    stop music fadeout 1.0
     play sound "audio/Waves.mp3"
     "Havana & River" "GYAAAAAAN AAAAAAA....*GLUP GLUP GLUP*"
     # hide havana normal
@@ -137,6 +141,7 @@ label SCENE_2 :
 #River and Havana meeting the anthropomorphised villains a.k.a GHG [scene atmosphere]
     scene bg atmosphere
     with fade
+    play music "cc_bgm_aware.wav" fadein 1.0
     # show co2 at left
     
     "C.A.R.B.O.N.  D.I.O.X.I.D.E"
@@ -381,4 +386,5 @@ greenhouse gas emmissions correlation!'''
     h "Our ozone layer has not yet irreparably been depleted!"
     r "Yeah and—"
     
+    stop music fadeout 1.0
     jump scene3

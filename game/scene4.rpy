@@ -26,9 +26,11 @@ label scene4:
     isec "Vehicles or any GHG emitting man made devices or products or machines not allowed in."
     # hide tourist annoyed
     # show tourist nervous_nodding at right
-    isec "It's a monetary loss for us sir, madam, but we need to stop contributing to the carbon footprint."
+    isec "It's not a monetary loss for us sir, madam, but we need to stop contributing to the carbon footprint."
     # hide isec gun
     # hide tourist nervous_nodding
+    scene bg atmosphere
+    with fade
     # show havana war at right
     # show river war at left
     r "Do you also want it to be  sea shells sea-shells on sea shore?"
