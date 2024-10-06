@@ -3,21 +3,23 @@ label start:
     scene bg beach
     with fade
     play music "mainbgm.mp3" fadein 1.0
-    # show havana war at right
+    show havana war at right
+    #    yallign 0.5
     h "It’s “She sells seashells on the seashore”."
     # show river war at left
     r '''Nah it's not that. You are saying it wrong!
     “Seas shell sea shells on the seashore” is how it goes.'''
     "And thus the great war between havana and river begins."
-    # hide havana war 
+    hide havana war 
     # hide river war
     # show river normal at left
-    # show havana normal at right
+    show havana normal at right
+    #    yallign 0.5
     # show grandpa summon
     gp "What's going on there, my starlings?"
     "**explain explain**"
     # hide grandpa summon
-    # hide havana normal
+    hide havana normal
     # show grandpa chuckle
     play sound "audio/Chuckling Man.mp3"
     gp "Both of you can be right."
@@ -34,11 +36,13 @@ Do you remember the flash floods that struck our city in 2019?'''
     play sound "audio/eek.mp3"
     # hide river shocked
     # show river normal at left
-    # show havana disgust at right
+    show havana disgust at right
+    #    yallign 0.5
     h "Oh yes I could locate multiple snakes swimming in that filthy stagnant water."
     stop sound
-    # hide havana disgust 
-    # show havana normal at right
+    hide havana disgust 
+    show havana normal at right
+    #    yallign 0.5
     gp '''Many coastal regions like our town are threatened by the ever-rising sea levels.
     This is triggered by the rising of temperatures, as I mentioned.'''
     # hide grandpa normal
@@ -46,19 +50,21 @@ Do you remember the flash floods that struck our city in 2019?'''
     gp '''*wipes sweat* You must be familiar with greenhouse gasses, I presume?
 They’re responsible for trapping heat.'''
     r  "This reminds me of our lectures from school, how about you, Havana?"
-    # hide havana normal
-    # show havana bliss right
+    hide havana normal
+    show havana bliss at right
+    #    yallign 0.5
     h "All I recollect is my craving for melting ice cream…"
     # hide river normal
     # show river disapointed at left
     r "*eye roll* It’s melting ice caps buddy, not ice creams!"
-    # hide havana bliss
-    # show havana nervous_chuckle at right
+    hide havana bliss
+    show havana nervous_chuckle at right
+    #    yallign 0.5
     h "It’s frustratingly hot outside, can’t blame me for hallucinating!"
     # hide grandpa sweat_wipe
     # show grandpa dying
     h "Oh no! Is Gramps possessed?"
-    # hide havana nervous_chuckle
+    hide havana nervous_chuckle
     # show havana pretending_possessed at right
     h '''As our local shaman would say,
 “Has some evil eye looked upon us?”'''
@@ -95,7 +101,8 @@ High temperatures cause this disorder'''
     play music "mainbgm.mp3" fadein 1.0
     # hide info kun
     # show grandpa faint
-    # show havana worried at left
+    show havana worried at left
+    #    yallign 0.5
     # show grandma disapointed at right
     gm '''I told your gramps to be in the shade but will he listen?
 Never!'''
@@ -104,18 +111,20 @@ Never!'''
     # show grandma tsundere at right
     gm '''I'll go fetch the community doctor.'''
     # hide grandma tsundere
-    # hide havana worried
+    hide havana worried
     # hide grandpa faint
     scene bg forest
     with fade
 #Havana and River attempted to find these herbs in the forest but they were all attacked by spider mites.
     # show river normal at left
-    # show havana normal at right
+    show havana normal at right
+    #    yallign 0.5
     # show destoryed alo_vera
     r "Now what do we do?"
     h "Let's keep looking."
     # hide destoryed alo_vera
-    # show havana normal
+    show havana normal
+    #    yallign 0.5
     # hide river normal
     # show river shocked at left
     r  "Oh I hear something."
@@ -131,7 +140,7 @@ Never!'''
     stop music fadeout 1.0
     play sound "audio/Waves.mp3"
     "Havana & River" "GYAAAAAAN AAAAAAA....*GLUP GLUP GLUP*"
-    # hide havana normal
+    hide havana normal
     # hide river shocked
     stop sound
     
@@ -199,7 +208,8 @@ we’ve got more GWP than all those present here.'''
 but we don’t need to convince you of our might when our GWP is 20k times higher.'''
     hide sf6
     hide no2
-    # show havana confused at left
+    show havana nervous_chuckle at left
+    #    yallign 0.5
     # show river confused at right
     h "Is this heaven or hell?"
     r "Where are we indeed?"
@@ -222,7 +232,8 @@ we very much are the ‘villains’
 that your people made us out to be because of the mismanagement of resources.'''
     hide co2 
     hide no2
-    # show havana confused at right
+    show havana nervous_chuckle at right
+    #    yallign 0.5
     # show river confused at left
     show h2o:
         yalign 0.5
@@ -303,7 +314,8 @@ and through the use of alternative refrigerants with
 lower global warming potentials than those presently used.'''
     # with fade
     # hide info kun
-    # show havana normal at left
+    show havana normal at left
+    #    yallign 0.5
     h '''There are natural processes to remove you CO2,
     methane and NO2 from atmosphere while there aren’t for FC.'''
     # show river normal
@@ -313,7 +325,7 @@ sheesh you all made it seem as if you don’t share a combined purpose.'''
     show no2 at right:
         yalign 0.5
     NO2 "It appears that we underestimated your understanding of the matter at hand."
-    # hide havana normal
+    hide havana normal
     show co2:
         yalign 0.5
     CO2 '''*shakes head* You kiddos might not be ignorant 
@@ -341,7 +353,8 @@ adopted by humans to curtail our maleffects.'''
 # show data_line_graph ghg_usa
 #   show river shocked at left
     "..."
-#   show havana shocked at right
+    show havana shocked at right
+    #    yallign 0.5
     "..."
 # hide data_line_graph ghg_usa
     show ch4:
@@ -361,7 +374,8 @@ menu:
 
 
 label q_1:
-    #scene data_line_graph ghg_usa
+    # show data_line_graph ghg_usa center:
+    #    yalign 0.5
     #with fade
     # show info kun
     i '''As the years go from 2005 to 2020
@@ -379,7 +393,8 @@ label q_1:
     jump q_2
 
 label q_2:
-    # scene bg co2_emission_trend
+    # show co2_emission_trend at center:
+    ##    yallign 0.5
     i '''From the year 2015 to 2020 
     did the trend in CO2 emissions increase or decrease in general overall in India?'''
     menu:

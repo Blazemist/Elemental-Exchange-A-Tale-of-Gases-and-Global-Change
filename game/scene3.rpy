@@ -3,7 +3,7 @@ label scene3:
     scene bg hospital
     with fade
     play music "mainbgm.mp3" fadein 1.0
-    # show havana sleeping at left
+    # show havana sleeping at left:
     # show river sleeping 
     h "..."
     # show doc nods at right
@@ -13,7 +13,8 @@ label scene3:
     # hide river sleeping
     # show river dizzy 
     # hide grandma sobs
-    # show havana dizzy at left
+    # show havana dizzy at left:
+    #    yallign 0.5
     r "Is it too late ?"
     r "Oh we are in the hospital?"
     # hide doc nods
@@ -21,7 +22,8 @@ label scene3:
     gp "You are back!"
     # hide river dizzy
     # hide havana dizzy
-    # show havana normal at left
+    # show havana normal at left:
+    #    yallign 0.5
     # show river normal
     r "Gramps are you alright too? No itching?"
     # hide grandpa glad
